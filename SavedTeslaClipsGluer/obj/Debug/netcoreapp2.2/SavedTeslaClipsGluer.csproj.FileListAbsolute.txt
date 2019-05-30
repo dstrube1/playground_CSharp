@@ -1,0 +1,11 @@
+/Users/dstrube/Projects/github/playground_C#/SavedTeslaClipsGluer/bin/Debug/netcoreapp2.2/SavedTeslaClipsGluer.deps.json
+/Users/dstrube/Projects/github/playground_C#/SavedTeslaClipsGluer/bin/Debug/netcoreapp2.2/SavedTeslaClipsGluer.runtimeconfig.json
+/Users/dstrube/Projects/github/playground_C#/SavedTeslaClipsGluer/bin/Debug/netcoreapp2.2/SavedTeslaClipsGluer.runtimeconfig.dev.json
+/Users/dstrube/Projects/github/playground_C#/SavedTeslaClipsGluer/bin/Debug/netcoreapp2.2/SavedTeslaClipsGluer.dll
+/Users/dstrube/Projects/github/playground_C#/SavedTeslaClipsGluer/bin/Debug/netcoreapp2.2/SavedTeslaClipsGluer.pdb
+/Users/dstrube/Projects/github/playground_C#/SavedTeslaClipsGluer/obj/Debug/netcoreapp2.2/SavedTeslaClipsGluer.csprojAssemblyReference.cache
+/Users/dstrube/Projects/github/playground_C#/SavedTeslaClipsGluer/obj/Debug/netcoreapp2.2/SavedTeslaClipsGluer.csproj.CoreCompileInputs.cache
+/Users/dstrube/Projects/github/playground_C#/SavedTeslaClipsGluer/obj/Debug/netcoreapp2.2/SavedTeslaClipsGluer.AssemblyInfoInputs.cache
+/Users/dstrube/Projects/github/playground_C#/SavedTeslaClipsGluer/obj/Debug/netcoreapp2.2/SavedTeslaClipsGluer.AssemblyInfo.cs
+/Users/dstrube/Projects/github/playground_C#/SavedTeslaClipsGluer/obj/Debug/netcoreapp2.2/SavedTeslaClipsGluer.dll
+/Users/dstrube/Projects/github/playground_C#/SavedTeslaClipsGluer/obj/Debug/netcoreapp2.2/SavedTeslaClipsGluer.pdb
