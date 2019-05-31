@@ -11,7 +11,17 @@ namespace SavedTeslaClipsGluer
         static void Main(string[] args)
         {
             const bool stopAtFirstDir = false;
-            var workingDir = "/Users/dstrube/Downloads/TeslaCam/SavedClips/";
+
+            string workingDir;
+            if (args.Length < 1 || args[0] == "")
+            {
+                workingDir = "/Users/dstrube/Downloads/TeslaCam/SavedClips/";
+            }
+            else
+            {
+                workingDir = args[0];
+            }
+
             var dirs = new ArrayList(Directory.GetDirectories(workingDir));
             dirs.Sort();
             dirs.TrimToSize();
@@ -54,7 +64,7 @@ namespace SavedTeslaClipsGluer
 
                     p1a.StartInfo.FileName = "ffmpeg";
                     p1a.StartInfo.WindowStyle = windowStyle;
-                    p1a.StartInfo.Arguments = $"-f concat -i {dir}/input.txt -c copy {dir}/output.mp4";
+                    p1a.StartInfo.Arguments = $"-f concat -i {dir}{Path.DirectorySeparatorChar}input.txt -c copy {dir}{Path.DirectorySeparatorChar}output.mp4";
                     p1a.Start();
 
                     if (stopAtFirstDir)
