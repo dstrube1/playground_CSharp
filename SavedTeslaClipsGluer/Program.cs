@@ -40,6 +40,8 @@ namespace SavedTeslaClipsGluer
                         //there is only 1 so skip this folder
                         continue;
                     }
+                    //TODO Only combine files from the same day
+                    //If multiple days exist in 1 folder, make a separate file for each day
                     Console.WriteLine($"file count: {mp4files.Count}");
                     Console.WriteLine("List of files:");
                     var stringBuilder = new StringBuilder();
