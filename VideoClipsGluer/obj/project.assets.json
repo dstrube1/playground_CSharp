@@ -690,9 +690,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/dstrube/Projects/github/playground_C#/SavedTeslaClipsGluer/SavedTeslaClipsGluer.csproj",
-      "projectName": "SavedTeslaClipsGluer",
-      "projectPath": "/Users/dstrube/Projects/github/playground_C#/SavedTeslaClipsGluer/SavedTeslaClipsGluer.csproj",
+      "projectUniqueName": "/Users/dstrube/Projects/github/playground_C#/SavedTeslaClipsGluer/VideoClipsGluer.csproj",
+      "projectName": "VideoClipsGluer",
+      "projectPath": "/Users/dstrube/Projects/github/playground_C#/SavedTeslaClipsGluer/VideoClipsGluer.csproj",
       "packagesPath": "/Users/dstrube/.nuget/packages/",
       "outputPath": "/Users/dstrube/Projects/github/playground_C#/SavedTeslaClipsGluer/obj/",
       "projectStyle": "PackageReference",
