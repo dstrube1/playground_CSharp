@@ -15,7 +15,6 @@
 /Users/dstrube/Projects/github/playground_C#/VideoClipsGluer/bin/Debug/netcoreapp2.2/VideoClipsGluer.dll
 /Users/dstrube/Projects/github/playground_C#/VideoClipsGluer/bin/Debug/netcoreapp2.2/VideoClipsGluer.pdb
 /Users/dstrube/Projects/github/playground_C#/VideoClipsGluer/obj/Debug/netcoreapp2.2/VideoClipsGluer.csprojAssemblyReference.cache
-/Users/dstrube/Projects/github/playground_C#/VideoClipsGluer/obj/Debug/netcoreapp2.2/VideoClipsGluer.csproj.CoreCompileInputs.cache
 /Users/dstrube/Projects/github/playground_C#/VideoClipsGluer/obj/Debug/netcoreapp2.2/VideoClipsGluer.AssemblyInfoInputs.cache
 /Users/dstrube/Projects/github/playground_C#/VideoClipsGluer/obj/Debug/netcoreapp2.2/VideoClipsGluer.AssemblyInfo.cs
 /Users/dstrube/Projects/github/playground_C#/VideoClipsGluer/obj/Debug/netcoreapp2.2/VideoClipsGluer.dll

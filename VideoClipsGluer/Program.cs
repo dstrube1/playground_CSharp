@@ -40,6 +40,9 @@ namespace VideoClipsGluer
                 var mp4filesRight = new ArrayList(Directory.GetFiles(dir.ToString(), "*-right_repeater.mp4"));
                 processFileType("right", mp4filesRight, dir.ToString());
 
+                var mp4filesBack = new ArrayList(Directory.GetFiles(dir.ToString(), "*-back.mp4"));
+                processFileType("back", mp4filesBack, dir.ToString());
+
                 if (mp4files.Count == 1)
                 {
                     //there is only 1 so skip this folder
@@ -114,8 +117,8 @@ namespace VideoClipsGluer
                 p1a.StartInfo.WindowStyle = windowStyle;
                 p1a.StartInfo.Arguments = $"-f concat -i {dir + Path.DirectorySeparatorChar + fileType}_input.txt -c copy {dir + Path.DirectorySeparatorChar + fileType}_output.mp4";
                 p1a.Start();
-                Console.WriteLine($"Hit enter after the file stuff is done...");
-                Console.ReadLine();
+                //Console.WriteLine($"Hit enter after the file stuff is done...");
+                //Console.ReadLine();
                 /*
                 */
             }
