@@ -34,8 +34,8 @@ namespace EmersonDataProcessor
         /*
          * Method: Read
          * Parameters: IFoo foo
-         * Purpose: parse thru data in foo to extract data for MergedListItem
-         * Returns: MergedListItem
+         * Purpose: parse thru data in foo to extract data for MergedListItems
+         * Returns: List of MergedListItems
          */
         public List<MergedListItem> Read(IFoo foo)
         {

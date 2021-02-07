@@ -39,6 +39,13 @@ namespace EmersonDataProcessor
 
         }
 
+        /*
+         * Method: ProcessFoo
+         * Parameters: string[] args, int fooType
+         * Purpose: Process one foo or the other, depending on parameters), 
+         *      populating List of MergedListItems
+         * Returns: true if successful; else false
+         */
         public static bool ProcessFoo(string[] args, int fooType)
         {
             if(args == null)

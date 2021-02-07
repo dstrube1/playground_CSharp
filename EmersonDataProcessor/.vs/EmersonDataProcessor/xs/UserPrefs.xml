@@ -4,15 +4,10 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="EmersonDataProcessor" expanded="True">
-            <Node name="EmersonDataProcessor" expanded="True" selected="True">
+            <Node name="EmersonDataProcessor" expanded="True">
               <Node name="Dependencies" expanded="True" />
               <Node name="EmersonDataUnitTests" expanded="True" />
-            </Node>
-            <Node name="EmersonDataUnitTests" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-                <Node name="ProjectDependencies" expanded="True" />
-              </Node>
+              <Node name="Foo1DataReader.cs" selected="True" />
             </Node>
           </Node>
         </State>
