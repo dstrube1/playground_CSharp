@@ -1,0 +1,12 @@
+/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/bin/Debug/netcoreapp3.1/EmersonDataProcessor.deps.json
+/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/bin/Debug/netcoreapp3.1/EmersonDataProcessor.runtimeconfig.json
+/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/bin/Debug/netcoreapp3.1/EmersonDataProcessor.runtimeconfig.dev.json
+/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/bin/Debug/netcoreapp3.1/EmersonDataProcessor.dll
+/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/bin/Debug/netcoreapp3.1/EmersonDataProcessor.pdb
+/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/bin/Debug/netcoreapp3.1/nunit.framework.dll
+/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/obj/Debug/netcoreapp3.1/EmersonDataProcessor.csproj.CoreCompileInputs.cache
+/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/obj/Debug/netcoreapp3.1/EmersonDataProcessor.csproj.CopyComplete
+/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/obj/Debug/netcoreapp3.1/EmersonDataProcessor.dll
+/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/obj/Debug/netcoreapp3.1/EmersonDataProcessor.pdb
+/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/obj/Debug/netcoreapp3.1/EmersonDataProcessor.genruntimeconfig.cache
