@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.808.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmersonDataProcessor", "EmersonDataProcessor\EmersonDataProcessor.csproj", "{4FA3B796-0FB4-420B-8A07-DFC0DE070EB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmersonDataProcessorUnitTests", "EmersonDataProcessorUnitTests\EmersonDataProcessorUnitTests.csproj", "{B4F2DA84-66E1-4932-8012-DE359483F4CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FA3B796-0FB4-420B-8A07-DFC0DE070EB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FA3B796-0FB4-420B-8A07-DFC0DE070EB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FA3B796-0FB4-420B-8A07-DFC0DE070EB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FA3B796-0FB4-420B-8A07-DFC0DE070EB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4F2DA84-66E1-4932-8012-DE359483F4CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4F2DA84-66E1-4932-8012-DE359483F4CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4F2DA84-66E1-4932-8012-DE359483F4CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4F2DA84-66E1-4932-8012-DE359483F4CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3708794D-DF4A-4248-BB31-2C2019F40CFF}
+	EndGlobalSection
+EndGlobal
