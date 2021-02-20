@@ -1,0 +1,136 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/EmersonDataProcessorTests/EmersonDataProcessorTests.csproj": {}
+  },
+  "projects": {
+    "/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/EmersonDataProcessor/EmersonDataProcessor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/EmersonDataProcessor/EmersonDataProcessor.csproj",
+        "projectName": "EmersonDataProcessor",
+        "projectPath": "/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/EmersonDataProcessor/EmersonDataProcessor.csproj",
+        "packagesPath": "/Users/dstrube/.nuget/packages/",
+        "outputPath": "/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/EmersonDataProcessor/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/dstrube/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/EmersonDataProcessorTests/EmersonDataProcessorTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/EmersonDataProcessorTests/EmersonDataProcessorTests.csproj",
+        "projectName": "EmersonDataProcessorTests",
+        "projectPath": "/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/EmersonDataProcessorTests/EmersonDataProcessorTests.csproj",
+        "packagesPath": "/Users/dstrube/.nuget/packages/",
+        "outputPath": "/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/EmersonDataProcessorTests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/dstrube/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/EmersonDataProcessor/EmersonDataProcessor.csproj": {
+                "projectPath": "/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/EmersonDataProcessor/EmersonDataProcessor.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.16.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

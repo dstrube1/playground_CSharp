@@ -1,0 +1,14 @@
+/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/EmersonDataProcessor/bin/Debug/netcoreapp3.1/EmersonDataProcessor.deps.json
+/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/EmersonDataProcessor/bin/Debug/netcoreapp3.1/EmersonDataProcessor.runtimeconfig.json
+/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/EmersonDataProcessor/bin/Debug/netcoreapp3.1/EmersonDataProcessor.runtimeconfig.dev.json
+/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/EmersonDataProcessor/bin/Debug/netcoreapp3.1/EmersonDataProcessor.dll
+/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/EmersonDataProcessor/bin/Debug/netcoreapp3.1/EmersonDataProcessor.pdb
+/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/EmersonDataProcessor/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/EmersonDataProcessor/obj/Debug/netcoreapp3.1/EmersonDataProcessor.csprojAssemblyReference.cache
+/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/EmersonDataProcessor/obj/Debug/netcoreapp3.1/EmersonDataProcessor.AssemblyInfoInputs.cache
+/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/EmersonDataProcessor/obj/Debug/netcoreapp3.1/EmersonDataProcessor.AssemblyInfo.cs
+/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/EmersonDataProcessor/obj/Debug/netcoreapp3.1/EmersonDataProcessor.csproj.CoreCompileInputs.cache
+/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/EmersonDataProcessor/obj/Debug/netcoreapp3.1/EmersonDataProcessor.csproj.CopyComplete
+/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/EmersonDataProcessor/obj/Debug/netcoreapp3.1/EmersonDataProcessor.dll
+/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/EmersonDataProcessor/obj/Debug/netcoreapp3.1/EmersonDataProcessor.pdb
+/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/EmersonDataProcessor/obj/Debug/netcoreapp3.1/EmersonDataProcessor.genruntimeconfig.cache

@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{A458ED2D-7261-47C5-8F9F-AE20F05441D3}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EmersonDataProcessorTests/UnitTest1.cs">
+    <Files>
+      <File FileName="EmersonDataProcessor/Program.cs" Line="6" Column="38" />
+      <File FileName="EmersonDataProcessorTests/UnitTest1.cs" Line="137" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="EmersonDataProcessor" expanded="True">
+            <Node name="EmersonDataProcessor" expanded="True">
+              <Node name="data" expanded="True" />
+            </Node>
+            <Node name="EmersonDataProcessorTests" expanded="True">
+              <Node name="UnitTest1.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.EmersonDataProcessorTests FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.EmersonDataProcessor PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

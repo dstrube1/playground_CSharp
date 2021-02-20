@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "WgTDZEFttscP2DxFascsA8LUUwCynnclIun+newYVEdb06gVMObmIyLnwe28WhgbhXEp0JPAOwVG3fVQmqbG2g==",
+  "success": true,
+  "projectFilePath": "/Users/dstrube/Projects/github/CSharp/EmersonDataProcessor/EmersonDataProcessor/EmersonDataProcessor.csproj",
+  "expectedPackageFiles": [
+    "/Users/dstrube/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

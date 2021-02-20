@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="model\" />
+    <Folder Include="model\foo1\" />
+    <Folder Include="model\foo2\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="data\TrackerDataFoo1.json" />
+    <None Remove="data\TrackerDataFoo2.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="data\TrackerDataFoo1.json" />
+    <EmbeddedResource Include="data\TrackerDataFoo2.json" />
+  </ItemGroup>
+</Project>
