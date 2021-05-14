@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{58B4FBA1-4463-436F-9F54-2A8DD1C61F3B}|Default">
+  <MonoDevelop.Ide.ItemProperties.ControlExplorer.Droid PreferredExecutionTarget="Android.SelectDevice" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ControlExplorer" expanded="True">
+            <Node name="ControlExplorer.Droid" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
