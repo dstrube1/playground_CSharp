@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{128A22E4-7A43-44A4-9155-534B876A55F5}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="Program.cs" Line="44" Column="53" />
+      <File FileName="Program.cs" Line="156" Column="40" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,11 +13,14 @@
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.VideoClipsGluer PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>
-    <Watch file="../../../../../../gaq/DiveLog/DiveLog/DiveLog/ViewModels/SettingsViewModel.cs" line="24" offsetX="329" offsetY="330" expression="IsDark" liveUpdate="False" />
+    <Watch file="../../../../../../gaq/DiveLog/DiveLog/DiveLog/ViewModels/SettingsViewModel.cs" line="24" column="0" endLine="0" endColumn="0" offsetX="329" offsetY="330" expression="IsDark" liveUpdate="False" />
   </MonoDevelop.Ide.DebuggingService.PinnedWatches>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

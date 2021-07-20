@@ -19,3 +19,15 @@
 /Users/dstrube/Projects/github/playground_C#/VideoClipsGluer/obj/Debug/netcoreapp2.2/VideoClipsGluer.AssemblyInfo.cs
 /Users/dstrube/Projects/github/playground_C#/VideoClipsGluer/obj/Debug/netcoreapp2.2/VideoClipsGluer.dll
 /Users/dstrube/Projects/github/playground_C#/VideoClipsGluer/obj/Debug/netcoreapp2.2/VideoClipsGluer.pdb
+/Users/dstrube/Projects/CSharp/VideoClipsGluer/bin/Debug/netcoreapp2.2/VideoClipsGluer.deps.json
+/Users/dstrube/Projects/CSharp/VideoClipsGluer/bin/Debug/netcoreapp2.2/VideoClipsGluer.runtimeconfig.json
+/Users/dstrube/Projects/CSharp/VideoClipsGluer/bin/Debug/netcoreapp2.2/VideoClipsGluer.runtimeconfig.dev.json
+/Users/dstrube/Projects/CSharp/VideoClipsGluer/bin/Debug/netcoreapp2.2/VideoClipsGluer.dll
+/Users/dstrube/Projects/CSharp/VideoClipsGluer/bin/Debug/netcoreapp2.2/VideoClipsGluer.pdb
+/Users/dstrube/Projects/CSharp/VideoClipsGluer/obj/Debug/netcoreapp2.2/VideoClipsGluer.csproj.AssemblyReference.cache
+/Users/dstrube/Projects/CSharp/VideoClipsGluer/obj/Debug/netcoreapp2.2/VideoClipsGluer.AssemblyInfoInputs.cache
+/Users/dstrube/Projects/CSharp/VideoClipsGluer/obj/Debug/netcoreapp2.2/VideoClipsGluer.AssemblyInfo.cs
+/Users/dstrube/Projects/CSharp/VideoClipsGluer/obj/Debug/netcoreapp2.2/VideoClipsGluer.csproj.CoreCompileInputs.cache
+/Users/dstrube/Projects/CSharp/VideoClipsGluer/obj/Debug/netcoreapp2.2/VideoClipsGluer.dll
+/Users/dstrube/Projects/CSharp/VideoClipsGluer/obj/Debug/netcoreapp2.2/VideoClipsGluer.pdb
+/Users/dstrube/Projects/CSharp/VideoClipsGluer/obj/Debug/netcoreapp2.2/VideoClipsGluer.genruntimeconfig.cache

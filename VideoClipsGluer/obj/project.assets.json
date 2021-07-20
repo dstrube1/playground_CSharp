@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/dstrube/Projects/github/playground_C#/VideoClipsGluer/VideoClipsGluer.csproj",
+      "projectUniqueName": "/Users/dstrube/Projects/CSharp/VideoClipsGluer/VideoClipsGluer.csproj",
       "projectName": "VideoClipsGluer",
-      "projectPath": "/Users/dstrube/Projects/github/playground_C#/VideoClipsGluer/VideoClipsGluer.csproj",
+      "projectPath": "/Users/dstrube/Projects/CSharp/VideoClipsGluer/VideoClipsGluer.csproj",
       "packagesPath": "/Users/dstrube/.nuget/packages/",
-      "outputPath": "/Users/dstrube/Projects/github/playground_C#/VideoClipsGluer/obj/",
+      "outputPath": "/Users/dstrube/Projects/CSharp/VideoClipsGluer/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -708,11 +708,11 @@
         "netcoreapp2.2"
       ],
       "sources": {
-        "http://nuget.grapecity.com/nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.2": {
+          "targetAlias": "netcoreapp2.2",
           "projectReferences": {}
         }
       },
@@ -724,6 +724,7 @@
     },
     "frameworks": {
       "netcoreapp2.2": {
+        "targetAlias": "netcoreapp2.2",
         "dependencies": {
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
@@ -742,7 +743,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
       }
     }
   }
