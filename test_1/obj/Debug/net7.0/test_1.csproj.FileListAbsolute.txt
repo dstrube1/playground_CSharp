@@ -1,0 +1,15 @@
+/Users/dstrube/Projects/playground_CSharp/test_1/bin/Debug/net7.0/test_1
+/Users/dstrube/Projects/playground_CSharp/test_1/bin/Debug/net7.0/test_1.deps.json
+/Users/dstrube/Projects/playground_CSharp/test_1/bin/Debug/net7.0/test_1.runtimeconfig.json
+/Users/dstrube/Projects/playground_CSharp/test_1/bin/Debug/net7.0/test_1.dll
+/Users/dstrube/Projects/playground_CSharp/test_1/bin/Debug/net7.0/test_1.pdb
+/Users/dstrube/Projects/playground_CSharp/test_1/obj/Debug/net7.0/test_1.csproj.AssemblyReference.cache
+/Users/dstrube/Projects/playground_CSharp/test_1/obj/Debug/net7.0/test_1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dstrube/Projects/playground_CSharp/test_1/obj/Debug/net7.0/test_1.AssemblyInfoInputs.cache
+/Users/dstrube/Projects/playground_CSharp/test_1/obj/Debug/net7.0/test_1.AssemblyInfo.cs
+/Users/dstrube/Projects/playground_CSharp/test_1/obj/Debug/net7.0/test_1.csproj.CoreCompileInputs.cache
+/Users/dstrube/Projects/playground_CSharp/test_1/obj/Debug/net7.0/test_1.dll
+/Users/dstrube/Projects/playground_CSharp/test_1/obj/Debug/net7.0/refint/test_1.dll
+/Users/dstrube/Projects/playground_CSharp/test_1/obj/Debug/net7.0/test_1.pdb
+/Users/dstrube/Projects/playground_CSharp/test_1/obj/Debug/net7.0/test_1.genruntimeconfig.cache
+/Users/dstrube/Projects/playground_CSharp/test_1/obj/Debug/net7.0/ref/test_1.dll
