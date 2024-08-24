@@ -7895,7 +7895,9 @@ $.widget( "ui.tabs", {
 
 	_sanitizeSelector: function( hash ) {
 		// we need this because an id may contain a ":"
-		return hash.replace( /:/g, "\\:" );
+		//return hash.replace( /:/g, "\\:" );
+		//https://github.com/dstrube1/playground_CSharp/security/code-scanning/50
+		return hash.replace("'", "''");
 	},
 
 	_cookie: function() {
