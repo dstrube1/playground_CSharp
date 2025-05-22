@@ -1,0 +1,15 @@
+/Users/dstrube/Projects/CSharp/BAKremoveer/BAKremoveer/obj/Debug/net7.0/BAKremoveer.csproj.AssemblyReference.cache
+/Users/dstrube/Projects/CSharp/BAKremoveer/BAKremoveer/obj/Debug/net7.0/BAKremoveer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dstrube/Projects/CSharp/BAKremoveer/BAKremoveer/obj/Debug/net7.0/BAKremoveer.AssemblyInfoInputs.cache
+/Users/dstrube/Projects/CSharp/BAKremoveer/BAKremoveer/obj/Debug/net7.0/BAKremoveer.AssemblyInfo.cs
+/Users/dstrube/Projects/CSharp/BAKremoveer/BAKremoveer/obj/Debug/net7.0/BAKremoveer.csproj.CoreCompileInputs.cache
+/Users/dstrube/Projects/CSharp/BAKremoveer/BAKremoveer/bin/Debug/net7.0/BAKremoveer
+/Users/dstrube/Projects/CSharp/BAKremoveer/BAKremoveer/bin/Debug/net7.0/BAKremoveer.deps.json
+/Users/dstrube/Projects/CSharp/BAKremoveer/BAKremoveer/bin/Debug/net7.0/BAKremoveer.runtimeconfig.json
+/Users/dstrube/Projects/CSharp/BAKremoveer/BAKremoveer/bin/Debug/net7.0/BAKremoveer.dll
+/Users/dstrube/Projects/CSharp/BAKremoveer/BAKremoveer/bin/Debug/net7.0/BAKremoveer.pdb
+/Users/dstrube/Projects/CSharp/BAKremoveer/BAKremoveer/obj/Debug/net7.0/BAKremoveer.dll
+/Users/dstrube/Projects/CSharp/BAKremoveer/BAKremoveer/obj/Debug/net7.0/refint/BAKremoveer.dll
+/Users/dstrube/Projects/CSharp/BAKremoveer/BAKremoveer/obj/Debug/net7.0/BAKremoveer.pdb
+/Users/dstrube/Projects/CSharp/BAKremoveer/BAKremoveer/obj/Debug/net7.0/BAKremoveer.genruntimeconfig.cache
+/Users/dstrube/Projects/CSharp/BAKremoveer/BAKremoveer/obj/Debug/net7.0/ref/BAKremoveer.dll

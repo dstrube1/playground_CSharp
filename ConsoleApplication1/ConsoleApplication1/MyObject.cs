@@ -1,4 +1,4 @@
-﻿namespace ConsoleApplication1
+namespace ConsoleApplication1
 {
     //this is for refTest in class Program
     public class MyObject

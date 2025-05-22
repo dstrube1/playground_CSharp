@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 //
 // sample app basis generated from public example

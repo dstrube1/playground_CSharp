@@ -1,0 +1,15 @@
+/Users/dstrube/Projects/CSharp/BankingSystem/BankingSystem/bin/Debug/net7.0/BankingSystem
+/Users/dstrube/Projects/CSharp/BankingSystem/BankingSystem/bin/Debug/net7.0/BankingSystem.deps.json
+/Users/dstrube/Projects/CSharp/BankingSystem/BankingSystem/bin/Debug/net7.0/BankingSystem.runtimeconfig.json
+/Users/dstrube/Projects/CSharp/BankingSystem/BankingSystem/bin/Debug/net7.0/BankingSystem.dll
+/Users/dstrube/Projects/CSharp/BankingSystem/BankingSystem/bin/Debug/net7.0/BankingSystem.pdb
+/Users/dstrube/Projects/CSharp/BankingSystem/BankingSystem/obj/Debug/net7.0/BankingSystem.csproj.AssemblyReference.cache
+/Users/dstrube/Projects/CSharp/BankingSystem/BankingSystem/obj/Debug/net7.0/BankingSystem.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dstrube/Projects/CSharp/BankingSystem/BankingSystem/obj/Debug/net7.0/BankingSystem.AssemblyInfoInputs.cache
+/Users/dstrube/Projects/CSharp/BankingSystem/BankingSystem/obj/Debug/net7.0/BankingSystem.AssemblyInfo.cs
+/Users/dstrube/Projects/CSharp/BankingSystem/BankingSystem/obj/Debug/net7.0/BankingSystem.csproj.CoreCompileInputs.cache
+/Users/dstrube/Projects/CSharp/BankingSystem/BankingSystem/obj/Debug/net7.0/BankingSystem.dll
+/Users/dstrube/Projects/CSharp/BankingSystem/BankingSystem/obj/Debug/net7.0/refint/BankingSystem.dll
+/Users/dstrube/Projects/CSharp/BankingSystem/BankingSystem/obj/Debug/net7.0/BankingSystem.pdb
+/Users/dstrube/Projects/CSharp/BankingSystem/BankingSystem/obj/Debug/net7.0/BankingSystem.genruntimeconfig.cache
+/Users/dstrube/Projects/CSharp/BankingSystem/BankingSystem/obj/Debug/net7.0/ref/BankingSystem.dll

@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using System.Diagnostics;
 using System.Globalization;
-using System.Linq;
 using System.Net;
 using System.Reflection;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 
 //
 // a place to test stuff
@@ -19,44 +13,108 @@ namespace ConsoleApplication1
     class Program
     {
 
-    public static void Main(string[] args)
-    {
-            //linqXample();
+        public static void Main(string[] args)
+        {
+            linqXample();
 
             //Console.ReadLine();
+            
+            /*
+            Entity Framework:
+            1-
+            dstrube@David-2 ConsoleApplication1 % dotnet add ConsoleApplication1 package Microsoft.EntityFrameworkCore.Design --version 9.0.5
+  ConsoleApplication1 succeeded with 1 warning(s) (0.1s)
+    /usr/local/share/dotnet/sdk/9.0.300/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: The target framework 'net7.0' is out of support and will not receive security updates in the future. Please refer to https://aka.ms/dotnet-core-support for more information about the support policy.
+
+Build succeeded with 1 warning(s) in 1.0s
+info : X.509 certificate chain validation will use the fallback certificate bundle at '/usr/local/share/dotnet/sdk/9.0.300/trustedroots/codesignctl.pem'.
+info : X.509 certificate chain validation will use the fallback certificate bundle at '/usr/local/share/dotnet/sdk/9.0.300/trustedroots/timestampctl.pem'.
+info : Adding PackageReference for package 'Microsoft.EntityFrameworkCore.Design' into project '/Users/dstrube/Projects/CSharp/ConsoleApplication1/ConsoleApplication1/ConsoleApplication1.csproj'.
+info : Restoring packages for /Users/dstrube/Projects/CSharp/ConsoleApplication1/ConsoleApplication1/ConsoleApplication1.csproj...
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.design/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.design/index.json 48ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.design/9.0.5/microsoft.entityframeworkcore.design.9.0.5.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.design/9.0.5/microsoft.entityframeworkcore.design.9.0.5.nupkg 13ms
+info : Installed Microsoft.EntityFrameworkCore.Design 9.0.5 from https://api.nuget.org/v3/index.json to /Users/dstrube/.nuget/packages/microsoft.entityframeworkcore.design/9.0.5 with content hash xOVWCGRF8DpOIoZ196/g7bdghc2e7Fp6R2vZPKndWv8A64bSDSaS7F2CUoqZpmSphUeT+1HDRpNYFRBQd8H71g==.
+info :   GET https://api.nuget.org/v3/vulnerabilities/index.json
+info :   OK https://api.nuget.org/v3/vulnerabilities/index.json 4ms
+info :   GET https://api.nuget.org/v3-vulnerabilities/2025.05.21.05.33.24/vulnerability.base.json
+info :   GET https://api.nuget.org/v3-vulnerabilities/2025.05.21.05.33.24/2025.05.21.05.33.24/vulnerability.update.json
+info :   OK https://api.nuget.org/v3-vulnerabilities/2025.05.21.05.33.24/vulnerability.base.json 5ms
+info :   OK https://api.nuget.org/v3-vulnerabilities/2025.05.21.05.33.24/2025.05.21.05.33.24/vulnerability.update.json 10ms
+error: NU1202: Package Microsoft.EntityFrameworkCore.Design 9.0.5 is not compatible with net7.0 (.NETCoreApp,Version=v7.0). Package Microsoft.EntityFrameworkCore.Design 9.0.5 supports: net8.0 (.NETCoreApp,Version=v8.0)
+error: Package 'Microsoft.EntityFrameworkCore.Design' is incompatible with 'all' frameworks in project '/Users/dstrube/Projects/CSharp/ConsoleApplication1/ConsoleApplication1/ConsoleApplication1.csproj'.
+
+2-
+dstrube@David-2 ConsoleApplication1 % dotnet ef
+
+
+                     _/\__       
+               ---==/    \\      
+         ___  ___   |.    \|\    
+        | __|| __|  |  )   \\\   
+        | _| | _|   \_/ |  //|\\ 
+        |___||_|       /   \\\/\\
+
+Entity Framework Core .NET Command-line Tools 9.0.5
+
+Usage: dotnet ef [options] [command]
+
+Options:
+  --version        Show version information
+  -h|--help        Show help information
+  -v|--verbose     Show verbose output.
+  --no-color       Don't colorize output.
+  --prefix-output  Prefix output with level.
+
+Commands:
+  database    Commands to manage the database.
+  dbcontext   Commands to manage DbContext types.
+  migrations  Commands to manage migrations.
+
+Use "dotnet ef [command] --help" for more information about a command.
+
+3-
+see also: https://learn.microsoft.com/en-us/ef/core/cli/dotnet
+            */
         }
 
         private static void linqXample()
         {
+            Console.WriteLine("linqXample:");
+
+            //Language Integrated Query
+
             //1 - where 
-            //string[] words = { "hello", "wonderful", "LINQ", "beautiful", "world" };
+            Console.WriteLine("Short words using 'where':");
+            string[] words = { "hello", "wonderful", "LINQ", "beautiful", "world" };
             ////Get only short words
-            //var shortWords = from word in words where word.Length <= 5 select word;
+            var shortWords = from word in words where word.Length <= 5 select word;
             ////Print each word out
-            //foreach (var word in shortWords)
-            //{
-            //    Console.WriteLine(word);
-            //}
+            foreach (var word in shortWords)
+            {
+               Console.WriteLine(word);
+            }
 
             //2 - select 
-            //var words = new List<string> { "an", "apple", "a", "day" };
-            //const int start = 0;
-            //const int size = 1;
-            //var query = from word in words select word.Substring(start, size);
-            //foreach (var s in query)
-            //{
-            //    Console.WriteLine(s);
-            //}
+            Console.WriteLine("\nSubstrings using 'select':");
+            var wordsList = new List<string> { "an", "apple", "a", "day" };
+            const int start = 0;
+            const int size = 1;
+            var query = from word in wordsList select word.Substring(start, size);
+            foreach (var s in query)
+            {
+               Console.WriteLine(s);
+            }
 
             //3- groupBy
+            Console.WriteLine("\nEven/odd using 'groupBy':");
             var numbers = new List<int>() { 35, 44, 200, 84, 3987, 4, 199, 329, 446, 208 };
-            var /*IEnumerable<IGrouping<int, int>>*/ query = from number in numbers
+            var /*IEnumerable<IGrouping<int, int>>*/ query0 = from number in numbers
                                                              group number by number % 2;
-            foreach (var group in query)
+            foreach (var group in query0)
             {
-                Console.WriteLine(group.Key == 0 ? "\nEven numbers:" : "\nOdd numbers:");
-                //Either way, this ends up looking a little weird
-                //Console.WriteLine(group.Key == 0 ? "Even numbers:\n" : "Odd numbers:\n");
+                Console.WriteLine(group.Key == 0 ? "\nEven numbers:" : "Odd numbers:");
                 foreach (var i in group)
                 {
                     Console.WriteLine(i);
@@ -68,7 +126,7 @@ namespace ConsoleApplication1
 
         #region Before main
         //////////////////////////////////////////////////////////////////////////////////////////////
-        private static EventClass evRaise = null;
+        private static EventClass? evRaise = null;
 
         public enum TestEnum
         {
@@ -80,7 +138,7 @@ namespace ConsoleApplication1
 
 
         #region ackerman recursion
-        static Hashtable hash;
+        static Hashtable hash = new Hashtable();
 
         //Investigating stackoverflow handling:
         //https://stackoverflow.com/questions/1599219/c-sharp-catch-a-stack-overflow-exception
@@ -92,7 +150,7 @@ namespace ConsoleApplication1
         //const int spaceRequired = 18 * 1024;
         #endregion
 
-        #endregion
+        #endregion //Before main
 
         #region From within main
 
@@ -109,7 +167,6 @@ namespace ConsoleApplication1
 
         #region ackerman recursion
         //https://www.youtube.com/watch?v=i7sm9dzFtEI
-        //hash = new Hashtable();
 
         //const int maxStackSize = 10000000;
         //var newThread = new Thread(() => ackermanHash(4, 1), maxStackSize);
@@ -872,7 +929,7 @@ namespace ConsoleApplication1
             {
                 var key = "m = " + m + "; n = 0";
                 //Console.WriteLine(key);
-                if (hash.Contains(key))
+                if (hash.Contains(key) && hash[key] != null)
                     ans = (int)hash[key];
                 else
                 {

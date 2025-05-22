@@ -1,0 +1,27 @@
+
+
+Launch your app
+Open a XAML or C# file and hover over the language status bar icon (portrayed as curly braces { } in the bottom right corner of the IDE next to the language name).
+
+Ensure that the Startup Project is set to your new project and the Debug Target is set to your desired target.
+
+Click Launch your .NET MAUI App, use keyboard shortcut (F5), or click ‘Run and Debug’ from the Run and Debug View. Then, select .NET MAUI as the configuration.
+
+Watch your app launch!
+
+SUGGESTION:
+- Android SDK - There are optional Android SDK components required for emulator usage that we recommend to installed/upgraded: "system-images/android-33/google_apis/x86_64".
+	1. Install the Android SDK components:
+		- From the command palette, choose '.NET MAUI: Configure Android', select 'How to configure Android', and follow the instructions.
+		- Alternatively, you can try installing the components by opening a Terminal, navigating to directory '/Users/dstrube/Library/Android/sdk/cmdline-tools/7.0/bin' and then running: './sdkmanager "system-images;android-33;google_apis;x86_64"'. Then, from the command palette, choose '.NET MAUI: Configure Android', and 'Refresh Android environment'.
+		
+
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/java"
+export JAVA_HOME="/usr/bin/java"
+
+cd /Users/dstrube/Library/Android/sdk/cmdline-tools/7.0/bin
+./sdkmanager --install emulator
+
+./sdkmanager --install "system-images;android-33;google_apis;x86_64"
+
+./sdkmanager "system-images;android-33;google_apis;x86_64"

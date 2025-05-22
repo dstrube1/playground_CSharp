@@ -1,0 +1,15 @@
+/Users/dstrube/Projects/CSharp/ConsoleApplication1/ConsoleApplication1/bin/Debug/net7.0/ConsoleApplication1
+/Users/dstrube/Projects/CSharp/ConsoleApplication1/ConsoleApplication1/bin/Debug/net7.0/ConsoleApplication1.deps.json
+/Users/dstrube/Projects/CSharp/ConsoleApplication1/ConsoleApplication1/bin/Debug/net7.0/ConsoleApplication1.runtimeconfig.json
+/Users/dstrube/Projects/CSharp/ConsoleApplication1/ConsoleApplication1/bin/Debug/net7.0/ConsoleApplication1.dll
+/Users/dstrube/Projects/CSharp/ConsoleApplication1/ConsoleApplication1/bin/Debug/net7.0/ConsoleApplication1.pdb
+/Users/dstrube/Projects/CSharp/ConsoleApplication1/ConsoleApplication1/obj/Debug/net7.0/ConsoleApplication1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dstrube/Projects/CSharp/ConsoleApplication1/ConsoleApplication1/obj/Debug/net7.0/ConsoleApplication1.AssemblyInfoInputs.cache
+/Users/dstrube/Projects/CSharp/ConsoleApplication1/ConsoleApplication1/obj/Debug/net7.0/ConsoleApplication1.AssemblyInfo.cs
+/Users/dstrube/Projects/CSharp/ConsoleApplication1/ConsoleApplication1/obj/Debug/net7.0/ConsoleApplication1.csproj.CoreCompileInputs.cache
+/Users/dstrube/Projects/CSharp/ConsoleApplication1/ConsoleApplication1/obj/Debug/net7.0/ConsoleApplication1.dll
+/Users/dstrube/Projects/CSharp/ConsoleApplication1/ConsoleApplication1/obj/Debug/net7.0/refint/ConsoleApplication1.dll
+/Users/dstrube/Projects/CSharp/ConsoleApplication1/ConsoleApplication1/obj/Debug/net7.0/ConsoleApplication1.pdb
+/Users/dstrube/Projects/CSharp/ConsoleApplication1/ConsoleApplication1/obj/Debug/net7.0/ConsoleApplication1.genruntimeconfig.cache
+/Users/dstrube/Projects/CSharp/ConsoleApplication1/ConsoleApplication1/obj/Debug/net7.0/ref/ConsoleApplication1.dll
+/Users/dstrube/Projects/CSharp/ConsoleApplication1/ConsoleApplication1/obj/Debug/net7.0/ConsoleApplication1.sourcelink.json
