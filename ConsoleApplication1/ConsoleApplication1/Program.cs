@@ -3,6 +3,10 @@ using System.Diagnostics;
 using System.Globalization;
 using System.Net;
 using System.Reflection;
+//neither of these are available:
+// using System.Data.Entity;
+// using Microsoft.EntityFrameworkCore;
+
 
 //
 // a place to test stuff
@@ -18,7 +22,7 @@ namespace ConsoleApplication1
             linqXample();
 
             //Console.ReadLine();
-            
+
             /*
             Entity Framework:
             1-
@@ -93,7 +97,7 @@ see also: https://learn.microsoft.com/en-us/ef/core/cli/dotnet
             ////Print each word out
             foreach (var word in shortWords)
             {
-               Console.WriteLine(word);
+                Console.WriteLine(word);
             }
 
             //2 - select 
@@ -104,14 +108,14 @@ see also: https://learn.microsoft.com/en-us/ef/core/cli/dotnet
             var query = from word in wordsList select word.Substring(start, size);
             foreach (var s in query)
             {
-               Console.WriteLine(s);
+                Console.WriteLine(s);
             }
 
             //3- groupBy
             Console.WriteLine("\nEven/odd using 'groupBy':");
             var numbers = new List<int>() { 35, 44, 200, 84, 3987, 4, 199, 329, 446, 208 };
             var /*IEnumerable<IGrouping<int, int>>*/ query0 = from number in numbers
-                                                             group number by number % 2;
+                                                              group number by number % 2;
             foreach (var group in query0)
             {
                 Console.WriteLine(group.Key == 0 ? "\nEven numbers:" : "Odd numbers:");
@@ -302,7 +306,7 @@ see also: https://learn.microsoft.com/en-us/ef/core/cli/dotnet
             B = 2;
         }
 
-        static void methodBaseTest() 
+        static void methodBaseTest()
         {
             var method = MethodBase.GetCurrentMethod();
             Console.WriteLine($"method name: {method.Name}");
@@ -1138,16 +1142,40 @@ see also: https://learn.microsoft.com/en-us/ef/core/cli/dotnet
 
     }
 
-/*    class TextAdder
+    #region EntityFramework
+    //From https://learn.microsoft.com/en-us/ef/ef6/modeling/code-first/workflows/new-database
+    public class Blog
     {
-        public StringBuilder addText(StringBuilder input)
-        {
-            input.Append("y");
-            StringBuilder result = new StringBuilder(input.ToString());
-            input = null;
-            return result;
-        }
-    }*/
+        public int BlogId { get; set; }
+        public string Name { get; set; }
+
+        //Making the two navigation properties (Blog.Posts and Post.Blog) virtual enables the Lazy Loading feature of Entity Framework;
+        //The contents of these properties will be automatically loaded from the database when you try to access them
+        public virtual List<Post> Posts { get; set; }
+    }
+
+    public class Post
+    {
+        public int PostId { get; set; }
+        public string Title { get; set; }
+        public string Content { get; set; }
+
+        public int BlogId { get; set; }
+        public virtual Blog Blog { get; set; }
+    }
+    #endregion //EntityFramework
+
+
+    /*    class TextAdder
+                {
+                    public StringBuilder addText(StringBuilder input)
+                    {
+                        input.Append("y");
+                        StringBuilder result = new StringBuilder(input.ToString());
+                        input = null;
+                        return result;
+                    }
+                }*/
     /*static class MyClass
     {
         static MyClass()
