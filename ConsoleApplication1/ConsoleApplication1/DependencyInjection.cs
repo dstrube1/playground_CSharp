@@ -16,6 +16,7 @@ public class MessageWriter
 
 public class Worker : BackgroundService
 {
+    //Hard-coded dependencies are problematic and should be avoided
     private readonly MessageWriter _messageWriter = new();
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -28,3 +29,7 @@ public class Worker : BackgroundService
     }
 }
 #endregion //Not using DI
+
+//.NET provides a built-in service container, IServiceProvider. 
+//Services are typically registered at the app's start-up and appended to an IServiceCollection. 
+//Once all services are added, you use BuildServiceProvider to create the service container.
