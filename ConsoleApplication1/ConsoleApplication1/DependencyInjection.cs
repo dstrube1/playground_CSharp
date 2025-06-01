@@ -6,7 +6,7 @@ using Microsoft.Extensions.Hosting;
 //dotnet add package Microsoft.Extensions.Hosting
 //this is required for the BackgroundService extension for Worker
 
-public class MessageWriter
+public class MessageWriterBad
 {
     public void Write(string message)
     {
@@ -17,7 +17,7 @@ public class MessageWriter
 public class Worker : BackgroundService
 {
     //Hard-coded dependencies are problematic and should be avoided
-    private readonly MessageWriter _messageWriter = new();
+    private readonly MessageWriterBad _messageWriter = new();
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
@@ -33,3 +33,14 @@ public class Worker : BackgroundService
 //.NET provides a built-in service container, IServiceProvider. 
 //Services are typically registered at the app's start-up and appended to an IServiceCollection. 
 //Once all services are added, you use BuildServiceProvider to create the service container.
+public interface IMessageWriter
+{
+    void Write(string message);
+}
+public class MessageWriter : IMessageWriter
+{
+    public void Write(string message)
+    {
+        Console.WriteLine($"MessageWriter.Write(message: \"{message}\")");
+    }
+}
