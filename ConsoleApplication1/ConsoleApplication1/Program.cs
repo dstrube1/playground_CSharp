@@ -19,10 +19,10 @@ namespace ConsoleApplication1
 
         public static void Main(string[] args)
         {
-            linqXample();
+            // linqXample();
 
             //Console.ReadLine();
-
+            asyncAwaitTest();
             /*
             Entity Framework:
             1-
@@ -124,6 +124,72 @@ see also: https://learn.microsoft.com/en-us/ef/core/cli/dotnet
                     Console.WriteLine(i);
                 }
             }
+        }
+
+        private static void asyncAwaitTest()
+        {
+            //from
+            //https://stackoverflow.com/questions/14177891/understanding-async-await-in-c-sharp
+            MainAsync().Wait();
+            //See also:
+            //https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/await
+            //https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/async
+            //https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/
+            //https://devblogs.microsoft.com/dotnet/how-async-await-really-works/
+
+            //Put await in front of a function call if it's asynchronous*
+            //Put async in a function signature if it's asynchronous
+            //If an asynchronous function returns nothing, its return type is Task (or ValueTask)
+            //If an asynchronous function returns something, its return type is Task<something> (or ValueTask<TResult>)
+            //*: also: await foreach, or await using
+
+            //For asynchronous operations that don't produce a value, you can call the Task.Wait method
+
+            int await = 0; 
+            Debug.WriteLine($"await isn't always a keyword: {await}");
+        }
+
+        public static async Task MainAsync()
+        {
+            Debug.WriteLine("Declaring Task1");
+            //Task starts as soon as it's declared
+            Task task1 = Task1();
+            Debug.WriteLine("Declaring Task2");
+            Task task2 = Task2();
+
+            await Task.WhenAll(task1, task2);
+
+            Debug.WriteLine("Finished main method");
+
+            //The async keyword is contextual in that it's a keyword only when it modifies a method, a lambda expression, or an anonymous method. 
+            // In all other contexts, it's interpreted as an identifier.
+            //So I can do this?
+            int async = 0; 
+            Debug.WriteLine($"async isn't always a keyword: {async}");
+            //What about await?
+            //int await = 0; 
+            //No, can't do this in an asynchronous method. What about outside?...
+        }
+
+        public static async Task Task1()
+        {
+            //An async method runs synchronously until it reaches its first await expression, at which point the method is suspended 
+            // until the awaited task is complete. In the meantime, control returns to the caller of the method,
+            Debug.WriteLine("Starting Task1");
+            await Task.Delay(500);
+            Debug.WriteLine("Finished Task1");
+        }
+
+        public static async Task Task2()
+        {
+            //async void methods are generally discouraged for code other than event handlers* because callers cannot await those methods 
+            // and must implement a different mechanism to report successful completion or error conditions
+            //*: event handlers are required to return void
+            Debug.WriteLine("Starting Task2");
+            //An async method can't declare any `in`, `ref` or `out` parameters, nor can it have a reference return value, 
+            // but it can call methods that have such parameters.
+            await Task.Delay(1000);
+            Debug.WriteLine("Finished Task2");
         }
 
         #region old
