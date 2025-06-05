@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Globalization;
 using System.Net;
+using System.Net.Sockets;
 using System.Reflection;
 //neither of these are available:
 // using System.Data.Entity;
@@ -83,54 +84,13 @@ see also: https://learn.microsoft.com/en-us/ef/core/cli/dotnet
             */
         }
 
-        private static void linqXample()
-        {
-            Console.WriteLine("linqXample:");
-
-            //Language Integrated Query
-
-            //1 - where 
-            Console.WriteLine("Short words using 'where':");
-            string[] words = { "hello", "wonderful", "LINQ", "beautiful", "world" };
-            ////Get only short words
-            var shortWords = from word in words where word.Length <= 5 select word;
-            ////Print each word out
-            foreach (var word in shortWords)
-            {
-                Console.WriteLine(word);
-            }
-
-            //2 - select 
-            Console.WriteLine("\nSubstrings using 'select':");
-            var wordsList = new List<string> { "an", "apple", "a", "day" };
-            const int start = 0;
-            const int size = 1;
-            var query = from word in wordsList select word.Substring(start, size);
-            foreach (var s in query)
-            {
-                Console.WriteLine(s);
-            }
-
-            //3- groupBy
-            Console.WriteLine("\nEven/odd using 'groupBy':");
-            var numbers = new List<int>() { 35, 44, 200, 84, 3987, 4, 199, 329, 446, 208 };
-            var /*IEnumerable<IGrouping<int, int>>*/ query0 = from number in numbers
-                                                              group number by number % 2;
-            foreach (var group in query0)
-            {
-                Console.WriteLine(group.Key == 0 ? "\nEven numbers:" : "Odd numbers:");
-                foreach (var i in group)
-                {
-                    Console.WriteLine(i);
-                }
-            }
-        }
-
+        #region asyncAwait
         private static void asyncAwaitTest()
         {
             //from
             //https://stackoverflow.com/questions/14177891/understanding-async-await-in-c-sharp
-            MainAsync().Wait();
+            //MainAsync().Wait();
+
             //See also:
             //https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/await
             //https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/async
@@ -145,8 +105,11 @@ see also: https://learn.microsoft.com/en-us/ef/core/cli/dotnet
 
             //For asynchronous operations that don't produce a value, you can call the Task.Wait method
 
-            int await = 0; 
-            Debug.WriteLine($"await isn't always a keyword: {await}");
+            // int await = 0;
+            // Debug.WriteLine($"await isn't always a keyword: {await}");
+
+            //Example of old bad way of doing asynchronous stuff that results in a stack overflow:
+            //OldBad();
         }
 
         public static async Task MainAsync()
@@ -191,6 +154,44 @@ see also: https://learn.microsoft.com/en-us/ef/core/cli/dotnet
             await Task.Delay(1000);
             Debug.WriteLine("Finished Task2");
         }
+
+        public static void OldBad()
+        {
+            //from https://devblogs.microsoft.com/dotnet/how-async-await-really-works/#in-the-beginning%E2%80%A6
+            using Socket listener = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            listener.Bind(new IPEndPoint(IPAddress.Loopback, 0));
+            listener.Listen();
+
+            using Socket client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            client.Connect(listener.LocalEndPoint!);
+
+            using Socket server = listener.Accept();
+            _ = server.SendAsync(new byte[100_000]);
+
+            var mres = new ManualResetEventSlim();
+            byte[] buffer = new byte[1];
+
+            var stream = new NetworkStream(client);
+            void ReadAgain()
+            {
+                stream.BeginRead(buffer, 0, 1, iar =>
+                {
+                    if (stream.EndRead(iar) != 0)
+                    {
+                        ReadAgain(); // uh oh!
+                    }
+                    else
+                    {
+                        mres.Set();
+                    }
+                }, null);
+            };
+            ReadAgain();
+
+            mres.Wait();
+        }
+
+        #endregion //asyncAwait
 
         #region old
 
@@ -355,6 +356,49 @@ see also: https://learn.microsoft.com/en-us/ef/core/cli/dotnet
         #endregion
 
         #region everything else
+
+        private static void linqXample()
+        {
+            Console.WriteLine("linqXample:");
+
+            //Language Integrated Query
+
+            //1 - where 
+            Console.WriteLine("Short words using 'where':");
+            string[] words = { "hello", "wonderful", "LINQ", "beautiful", "world" };
+            ////Get only short words
+            var shortWords = from word in words where word.Length <= 5 select word;
+            ////Print each word out
+            foreach (var word in shortWords)
+            {
+                Console.WriteLine(word);
+            }
+
+            //2 - select 
+            Console.WriteLine("\nSubstrings using 'select':");
+            var wordsList = new List<string> { "an", "apple", "a", "day" };
+            const int start = 0;
+            const int size = 1;
+            var query = from word in wordsList select word.Substring(start, size);
+            foreach (var s in query)
+            {
+                Console.WriteLine(s);
+            }
+
+            //3- groupBy
+            Console.WriteLine("\nEven/odd using 'groupBy':");
+            var numbers = new List<int>() { 35, 44, 200, 84, 3987, 4, 199, 329, 446, 208 };
+            var /*IEnumerable<IGrouping<int, int>>*/ query0 = from number in numbers
+                                                              group number by number % 2;
+            foreach (var group in query0)
+            {
+                Console.WriteLine(group.Key == 0 ? "\nEven numbers:" : "Odd numbers:");
+                foreach (var i in group)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+        }
 
         static void outTest()
         {
