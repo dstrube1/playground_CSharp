@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "QVWvaDyAzZo=",
+  "dgSpecHash": "B9JHtlGHIU4=",
   "success": true,
   "projectFilePath": "/Users/dstrube/Projects/CSharp/BlazorWebApp/BlazorApp1/BlazorApp1.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/dstrube/.nuget/packages/microsoft.netcore.app.ref/9.0.19/microsoft.netcore.app.ref.9.0.19.nupkg.sha512",
+    "/Users/dstrube/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.19/microsoft.aspnetcore.app.ref.9.0.19.nupkg.sha512",
+    "/Users/dstrube/.nuget/packages/microsoft.netcore.app.host.osx-x64/9.0.19/microsoft.netcore.app.host.osx-x64.9.0.19.nupkg.sha512"
+  ],
   "logs": []
 }
